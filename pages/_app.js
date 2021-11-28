@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import Leyaout from '../components/Leyaout'
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Leyaout>
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </Leyaout>
+  )
 }
 
 export default MyApp
